@@ -1,0 +1,13 @@
+<div>
+  <ul *ngFor="let pokemon of pokemonlist">
+    <li (click)="setSelectedPokemon(pokemon)">{{pokemon.name}}</li>
+  </ul>
+</div>
+
+
+<div *ngIf="selectedPokemon!=null">
+  <input type="text" [(ngModel)]="selectedPokemon.name">
+  <input type="text" [(ngModel)]="selectedPokemon.weight">
+  <input type="text" [(ngModel)]="selectedPokemon.height">
+</div>
+
