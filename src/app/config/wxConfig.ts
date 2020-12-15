@@ -1,0 +1,3 @@
+export let wxConfig = {
+  baseURL: 'https://pokeapi.co/api/v2/pokemon/bulbasaur/'
+};

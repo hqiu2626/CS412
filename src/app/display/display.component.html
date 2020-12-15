@@ -1,0 +1,11 @@
+<h2>ps7</h2>
+<div *ngIf="!toDisplay"> Enter a query</div>
+<div *ngIf="toDisplay">
+  <div *ngFor="let d of queryData | async">
+    {{d | json}}
+  </div>
+  <br>
+  <div>
+    {{queryData}}
+  </div>
+</div>
