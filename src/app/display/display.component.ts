@@ -6,9 +6,8 @@ import { Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./display.component.css']
 })
 export class DisplayComponent implements OnInit {
-  // This is the child component
   @Input() queryData: any;
-  @Input() toDisplay;
+  @Input() Display;
 
   constructor() { }
   ngOnInit(): void {
